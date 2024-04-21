@@ -1,7 +1,7 @@
 {
   "index": "Introduction",
   "installation-and-setting": "installation & Settings",
-  "python-and-fastapi": "Python & FastAPI",
+  "python-fastapi-streamlit": "Python, FastAPI, Streamlit",
   "contact": {
     "title": "Contact ↗",
     "type": "page",
