@@ -1,5 +1,7 @@
 {
   "index": "Introduction",
+  "installation-and-setting": "installation & Settings",
+  "python-and-fastapi": "Python & FastAPI",
   "contact": {
     "title": "Contact ↗",
     "type": "page",
