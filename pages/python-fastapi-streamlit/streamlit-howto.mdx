@@ -203,6 +203,9 @@ $ streamlit run streamlit-gui-3.py
 **streamlit-gui-4.py**
 
 ```python
+import streamlit as st
+
+st.metric(label="MSFT", value="399.12 USD", delta="-5.15 USD")
 ```
 
 <br/>
@@ -216,3 +219,9 @@ $ streamlit run streamlit-gui-4.py
 ```
 
 <br/>
+
+
+
+출력결과는 아래와 같습니다.
+
+![](./img/streamlit-howto/gui-4.png)
