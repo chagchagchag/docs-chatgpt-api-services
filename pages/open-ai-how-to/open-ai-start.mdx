@@ -1,0 +1,111 @@
+## Open AI 시작하기
+
+
+
+## 참고
+
+- [openai.com](https://openai.com/)
+- [openai.com/docs/introduction](https://platform.openai.com/docs/introduction)
+- [openai.com/docs/quickstart?context=python](https://platform.openai.com/docs/quickstart?context=python)
+
+<br/>
+
+
+
+## 개발자 문서
+
+[openai.com](https://openai.com/) 에 접속해서 API → Docs 로 메뉴 이동합니다.
+
+![](./img/open-ai-start/open-ai-page-1.png)
+
+<br/>
+
+
+
+이동한 Documentaion 페이지에서는 좌측 사이드 바에서 GET STARTED → Quckstart 를 클릭합니다.
+
+![](./img/open-ai-start/open-ai-page-2.png)
+
+<br/>
+
+
+
+이번 문서에서 작성하는 내용들은 대부분 위의 문서에 나온 내용들을 요약해서 적어봅니다.<br/>
+
+<br/>
+
+
+
+## 가상환경 생성, 파이썬 library 세팅
+
+자세한 내용은 [Step 1: Setting up Python](https://platform.openai.com/docs/quickstart/step-1-setting-up-python) 을 참고해주세요.
+
+```bash
+## 가상환경 생성
+$ virtualenv open-ai-start
+
+## 가상환경 디렉터리로 이동
+$ cd open-ai-start/
+
+## 가상환경 activate
+$ source Scripts/activate
+(open-ai-start)
+
+## openai 라이브러리 설치
+$ pip install --upgrade openai
+```
+
+<br/>
+
+
+
+vscode 에서도 가상환경을 설정해줍니다. (저는 python 에디터로 vscode 를 씁니다.)<br/>
+
+먼저 `Ctrl + Shift + P` → `> interpreter 검색` → `Python: Select Interpreter` 선택 을 통해서 Interpreter 선택 메뉴로 이동합니다.
+
+> 맥북에서는 `Cmd + Shift + P` 입니다.
+
+![](./img/open-ai-start/vscode-interpreter-1.png)
+
+<br/>
+
+
+
+위에서 미리 생성해둔 virtualenv 인 `open-ai-start` 를 선택합니다.
+
+![](./img/open-ai-start/vscode-interpreter-2.png)
+
+<br/>
+
+
+
+만약 이렇게 해도 vscode 터미널에 virtualenv 가 적용이 안된다면 아래와 같이 직접 `source ./Scripts/activate` 를 실행해주세요.
+
+![](./img/open-ai-start/vscode-interpreter-3.png)
+
+<br/>
+
+
+
+## api key 생성
+
+openapi.com 에 회원으로 로그인 합니다. 그리고 마이페이지로 이동합니다. 이동한 페이지에서는 `API keys` → `+Create new secret key` 를 선택합니다.
+
+![](./img/open-ai-start/api-key-1.png)
+
+<br/>
+
+
+
+Secret Key 를 생성하는 데에 필요한 정보들을 입력해줍니다. 그리고 `Create secret key` 버튼을 클릭합니다.
+
+![](./img/open-ai-start/api-key-2.png)
+
+<br/>
+
+
+
+Secret Key 를 복사해서 필요한 곳에 저장해둡니다. github 의 Environments 에 변수 등록할수도 있고, 환경변수로 등록할수는 등 여러가지 방법으로 키를 보관해두시면 됩니다. 제 경우에는 서버에 배포할게 아니기 때문에 별도의 하드디스크에 txt 파일을 생성해서 기록해두었습니다.
+
+![](./img/open-ai-start/api-key-3.png)
+
