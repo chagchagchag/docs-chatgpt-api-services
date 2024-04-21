@@ -2,11 +2,11 @@ import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 
 const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
+  logo: <span>Docs ChatGPT API Services</span>,
   project: {
-    link: 'https://github.com/chagchagchag/my-nextra-template',
+    link: 'https://github.com/chagchagchag/docs-chatgpt-api-services',
   },
-  docsRepositoryBase: 'https://github.com/chagchagchag/my-nextra-template',
+  docsRepositoryBase: 'https://github.com/chagchagchag/docs-chatgpt-api-services',
   footer: {
     text: 'Nextra Docs Template',
   },

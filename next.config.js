@@ -4,9 +4,9 @@ const withNextra = require('nextra')({
 })
 
 const isProduction = process.env.NODE_ENV === "production";
-const assetPrefix = isProduction ? "/my-nextra-template" : "";
+const assetPrefix = isProduction ? "/docs-chatgpt-api-services" : "";
 
-// const assetPrefix = "/my-nextra-template";
+// const assetPrefix = "/docs-chatgpt-api-services";
 
 const nextConfig = {
   images: {
